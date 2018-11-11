@@ -1,0 +1,14 @@
+body {
+    background: $body-color;
+    color: $theme-color;
+    line-height: 1.2;
+}
+
+.warp {
+    max-width: 1024px;
+    margin: 0 auto;
+}
+
+h2,h4 {
+    font-weight: bold;
+}

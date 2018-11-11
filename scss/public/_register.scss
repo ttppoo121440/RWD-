@@ -1,0 +1,153 @@
+.register-main {
+    text-align: center;
+    margin-bottom: 50px;
+
+    .register-title {
+        text-align: center;
+        width: 100%;
+        margin-top: 50px;
+        margin-bottom: 35px;
+
+    }
+
+    .register-form {
+        width: 100%;
+
+    }
+
+    h2 {
+        margin-top: 11px;
+        margin-bottom: 16px;
+    }
+
+    form {
+        display: inline-block;
+        width: 60.6%;
+        background: #EFE9E7;
+        box-shadow: 3px 3px 4px 0px rgba(0, 0, 0, 0.16);
+        border-top: 3px solid #FF5E45;
+
+
+        @include mobile() {
+            width: 90%;
+        }
+
+    }
+
+    .treaty {
+        float: left;
+        text-align: left;
+        width: 45%;
+        margin-left: 2.5%;
+        margin-bottom: 129px;
+
+        @include mobile() {
+            width: 100%;
+            margin: 0;
+            padding: 10px;
+        }
+
+    }
+
+    .form-main {
+        float: left;
+        width: 46.7%;
+        margin-right: 2.5%;
+        margin-left: 3.3%;
+
+        @include mobile() {
+            width: 100%;
+            margin: 0;
+            padding: 10px;
+        }
+
+        .lb {
+            float: left;
+            text-align: left;
+            width: 100%;
+        }
+
+        .email {
+            float: left;
+            width: 100%;
+            margin-bottom: 15px;
+            height: 32px;
+            padding-left: 30px;
+
+            background: #FFFFFF;
+            border: 1px solid #CCCCCC;
+            box-shadow: inset 0px 1px 0px 0px #ECECEC;
+            border-radius: 3px;
+
+            &:focus {
+                @include focus;
+            }
+        }
+
+        .password {
+            float: left;
+            width: 100%;
+            height: 32px;
+            padding-left: 30px;
+
+            background: #FFFFFF;
+            border: 1px solid #CCCCCC;
+            box-shadow: inset 0px 1px 0px 0px #ECECEC;
+            border-radius: 3px;
+            margin-bottom: 12px;
+
+            &:focus {
+                @include focus;
+            }
+        }
+
+        .input-box {
+            position: relative;
+            float: left;
+            width: 100%;
+
+            .fas {
+                position: absolute;
+                left: 10px;
+                top: 7px;
+            }
+        }
+
+
+
+        .fas {
+            position: absolute;
+            top: 0%;
+            left: 5%;
+        }
+
+        a {
+            @include a-init;
+            float: left;
+            color: #FF5E45;
+            font-size: $font-size-xs;
+            width: 100%;
+            text-align: left;
+            margin-top: 1px;
+        }
+
+        .inupt-button {
+            float: left;
+            width: 100%;
+            margin-top: 36px;
+            margin-bottom: 15px;
+
+            .register-btn {
+                @include btn-init;
+                float: right;
+                width: 125px;
+                height: 32px;
+                font-size: 14px;
+                color: #FFFFFF;
+                background: #F56C23;
+            }
+        }
+    }
+
+    @extend %clearfix;
+}

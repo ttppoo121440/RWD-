@@ -1,0 +1,43 @@
+$cart-span-fz:12px;
+$font-size-xs:14px;
+$font-size-s:18px;
+$font-size-m:20px;
+$font-size-l:24px;
+$font-size-big:36px;
+
+$theme-color:#3D1101;
+$chef-color:#EFE9E7;
+$body-color:#EFE9E7;
+$focus-color: #f6e58d;
+
+@function gray($level:0%) {
+    @return darken(#ffffff, $level);
+}
+
+@mixin btn-init {
+    border-radius: 3px;
+    outline: none;
+    border: none;
+    cursor: pointer;
+
+    &:hover {
+        color: $theme-color;
+    }
+}
+
+@mixin hide-text {
+    text-indent: 101%;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+
+@mixin a-init {
+    text-decoration: none;
+    display: block;
+    color: gray();
+}
+
+@mixin focus {
+    background: $focus-color;
+}

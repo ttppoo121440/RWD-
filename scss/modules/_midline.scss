@@ -1,0 +1,30 @@
+.midline {
+    display: block;
+    text-align: center;
+}
+
+.midline>span {
+    position: relative;
+    display: inline-block;
+    font-weight: bold;
+}
+
+.midline>span:before,
+.midline>span:after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    height: 1px;
+    background: #979797;
+}
+
+.midline>span:before {
+    right: 100%;
+    margin-right: 13px;
+}
+
+.midline>span:after {
+    left: 100%;
+    margin-left: 12px;
+}
