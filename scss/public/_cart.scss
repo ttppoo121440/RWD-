@@ -202,7 +202,7 @@
             background: #EFE9E7;
             box-shadow: 3px 3px 4px 0px rgba(0, 0, 0, 0.16);
 
-            @include cart-mb() {
+            @include tablet() {
                 width: 46%;
                 margin: 10px 2%;
             }
@@ -241,7 +241,6 @@
             width: 90px;
             height: 90px;
             overflow: hidden;
-            /* 當超過width和height的大小就隱藏 */
 
             position: absolute;
             top: -5px;

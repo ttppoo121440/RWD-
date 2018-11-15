@@ -1,4 +1,3 @@
-@charset "UTF-8";
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -54,7 +53,7 @@ table {
           box-sizing: border-box;
 }
 
-footer .about::after, footer .connection::after, footer .Community::after, footer .Community img::after, footer .Community ul::after, footer::after, header nav::after, header menu .toggle::after, header::after, .Introduction .container::after, .Introduction ul::after, .Introduction .imgCenter::after, .Introduction::after, .today-chef::after, .impression .comment::after, .impression::after, .map::after, .login-main::after, .register-main::after, .cart-main::after {
+footer .about::after, footer .connection::after, footer::after, .Community::after, .Community img::after, .Community ul::after, header nav::after, header menu .toggle::after, header::after, .Introduction .container::after, .Introduction ul::after, .Introduction .imgCenter::after, .Introduction::after, .today-chef::after, .impression .comment::after, .impression::after, .map::after, .login-main::after, .register-main::after, .cart-main::after {
   display: block;
   clear: both;
   content: "";
@@ -270,7 +269,7 @@ footer .connection ul {
   margin-top: 16px;
 }
 
-footer .Community {
+.Community {
   float: left;
   margin-top: 25px;
   margin-left: 8.5%;
@@ -279,14 +278,14 @@ footer .Community {
 }
 
 @media screen and (max-width: 769px) {
-  footer .Community {
+  .Community {
     margin-right: 1%;
     margin-left: 8.9%;
   }
 }
 
 @media screen and (max-width: 576px) {
-  footer .Community {
+  .Community {
     float: none;
     width: 95%;
     margin-left: 5%;
@@ -294,59 +293,59 @@ footer .Community {
   }
 }
 
-footer .Community img {
+.Community img {
   float: left;
   margin-bottom: 22px;
   max-width: 100%;
 }
 
 @media screen and (max-width: 769px) {
-  footer .Community img {
+  .Community img {
     margin-top: 57px;
   }
 }
 
 @media screen and (max-width: 576px) {
-  footer .Community img {
+  .Community img {
     max-width: 100%;
   }
 }
 
-footer .Community ul {
+.Community ul {
   float: right;
 }
 
 @media screen and (max-width: 576px) {
-  footer .Community ul {
+  .Community ul {
     width: 100%;
     float: left;
   }
 }
 
-footer .Community ul li {
+.Community ul li {
   display: inline-block;
   padding: 0 3px;
   cursor: pointer;
 }
 
-footer .Community ul .google {
+.Community ul .google {
   color: #DB4437;
 }
 
-footer .Community ul .twitter {
+.Community ul .twitter {
   color: #41ABE1;
 }
 
-footer .Community ul .facebook {
+.Community ul .facebook {
   color: #3A5795;
 }
 
-footer .Community .fab {
+.Community .fab {
   font-size: 36px;
 }
 
 @media screen and (max-width: 576px) {
-  footer .Community {
+  .Community {
     margin-bottom: 50px;
   }
 }
@@ -1495,7 +1494,7 @@ header .title p {
           box-shadow: 3px 3px 4px 0px rgba(0, 0, 0, 0.16);
 }
 
-@media screen and (max-width: 655px) {
+@media screen and (max-width: 769px) {
   .cart-main .product li {
     width: 46%;
     margin: 10px 2%;
@@ -1535,7 +1534,6 @@ header .title p {
   width: 90px;
   height: 90px;
   overflow: hidden;
-  /* 當超過width和height的大小就隱藏 */
   position: absolute;
   top: -5px;
   right: -5px;

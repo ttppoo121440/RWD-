@@ -58,81 +58,83 @@ footer {
 
     }
 
-    .Community {
+
+
+    @extend %clearfix;
+
+}
+
+.Community {
+    @extend %clearfix;
+    float: left;
+    margin-top: 25px;
+    margin-left: 8.5%;
+    margin-right: 4.2%;
+    width: 24%;
+
+    @include tablet() {
+        margin-right: 1%;
+        margin-left: 8.9%;
+    }
+
+    @include mobile() {
+        float: none;
+        width: 95%;
+        margin-left: 5%;
+        margin-top: 0;
+    }
+
+    img {
         @extend %clearfix;
         float: left;
-        margin-top: 25px;
-        margin-left: 8.5%;
-        margin-right: 4.2%;
-        width: 24%;
+        margin-bottom: 22px;
+        max-width: 100%;
 
         @include tablet() {
-            margin-right: 1%;
-            margin-left: 8.9%;
+            margin-top: 57px;
         }
 
         @include mobile() {
-            float: none;
-            width: 95%;
-            margin-left: 5%;
-            margin-top: 0;
-        }
-
-        img {
-            @extend %clearfix;
-            float: left;
-            margin-bottom: 22px;
             max-width: 100%;
-
-            @include tablet() {
-                margin-top: 57px;
-            }
-
-            @include mobile() {
-                max-width: 100%;
-            }
-
-        }
-
-        ul {
-            @extend %clearfix;
-            float: right;
-
-            @include mobile() {
-                width: 100%;
-                float: left;
-            }
-
-            li {
-                display: inline-block;
-                padding: 0 3px;
-                cursor: pointer;
-
-            }
-
-            .google {
-                color: #DB4437;
-            }
-
-            .twitter {
-                color: #41ABE1;
-            }
-
-            .facebook {
-                color: #3A5795;
-            }
-        }
-
-        .fab {
-            font-size: $font-size-big;
-        }
-
-        @include mobile() {
-            margin-bottom: 50px;
         }
 
     }
 
-    @extend %clearfix;
+    ul {
+        @extend %clearfix;
+        float: right;
+
+        @include mobile() {
+            width: 100%;
+            float: left;
+        }
+
+        li {
+            display: inline-block;
+            padding: 0 3px;
+            cursor: pointer;
+
+        }
+
+        .google {
+            color: #DB4437;
+        }
+
+        .twitter {
+            color: #41ABE1;
+        }
+
+        .facebook {
+            color: #3A5795;
+        }
+    }
+
+    .fab {
+        font-size: $font-size-big;
+    }
+
+    @include mobile() {
+        margin-bottom: 50px;
+    }
 
 }
